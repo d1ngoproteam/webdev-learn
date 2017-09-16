@@ -9,20 +9,20 @@ for (i = 0; i <= N; i++) {
   alert("Число " + schet++ + ": " + array[i]);
 }
 
-var searchNumbers = prompt("Число для поиска: "); 
-if ((searchNumbers == "") || (isNaN(searchNumbers))) {
+var searchNumber = prompt("Число для поиска: "); 
+if ((searchNumber == "") || (isNaN(searchNumber))) {
   alert("Ошибка ввода");
   windows.stop;
 }
 
 for (i = 0; i <= N; i++) {
-  if (array[i] == searchNumbers) {
+  if (array[i] == searchNumber) {
     isFound = true;
   }
 }  	
 
 if (!isFound) {
-  alert("Число: " + searchNumbers + " не найдено");
+  alert("Число: " + searchNumber + " не найдено");
 } else {
-  alert("Число: " + searchNumbers + " найдено");
+  alert("Число: " + searchNumber + " найдено");
 }
