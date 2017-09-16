@@ -1,4 +1,4 @@
-var schet = 1;
+var counter = 1;
 var searchNumber;
 var N = 9; 
 var array = [];
@@ -6,7 +6,7 @@ var isFound = false;
 
 for (i = 0; i <= N; i++) { 
   array[i] = Math.floor(Math.random() * (16 - 1)) + 1;  
-  alert("Число " + schet++ + ": " + array[i]);
+  alert("Число " + counter++ + ": " + array[i]);
 }
 
 var searchNumber = prompt("Число для поиска: "); 
