@@ -1,19 +1,23 @@
+var searchNumber;
 var N = 10; 
 var array = [];
 var isFound = false; 
 
-var a = prompt("Число для поиска: "); 
-
+var searchNumbers = prompt("Р§РёСЃР»Рѕ РґР»СЏ РїРѕРёСЃРєР°: "); 
+if ((searchNumber == "") || (isNaN(searchNumber))) {
+  alert("РћС€РёР±РєР° РІРІРѕРґР°");
+  windows.stop;
+}  
 for (i = 1; i <= N; i++) { 
   array[i] = Math.floor(Math.random() * (16 - 1)) + 1;  
-  alert("Число " + i + ": " + array[i]);
-    if (array[i] == a) {
+  alert("Р§РёСЃР»Рѕ " + i + ": " + array[i]);
+    if (array[i] == searchNumbers) {
       isFound = true;
-	}
+    }
 }
 
-if (isFound == true) {
-  alert("Число: " + a + " найдено");
+if (!isFound) {
+  alert("Р§РёСЃР»Рѕ: " + searchNumbers + " РЅРµ РЅР°Р№РґРµРЅРѕ");
 } else {
-  alert("Число: " + a + " не найдено");
+  alert("Р§РёСЃР»Рѕ: " + searchNumbers + " РЅР°Р№РґРµРЅРѕ");
 }
