@@ -3,12 +3,13 @@ var searchNumber;
 var N = 9; 
 var array = [];
 var isFound = false;
-var out; 
+var out = "";
 
 for (i = 0; i <= N; i++) { 
   array[i] = Math.floor(Math.random() * (16 - 1)) + 1;  
-  alert("Число " + counter++ + ": " + array[i]);
+  out = out + "Число " + counter++ + ": " + array[i] + "\n";
 }
+alert(out);
 
 var searchNumber = prompt("Число для поиска: "); 
 if ((searchNumber == "") || (isNaN(searchNumber)) || (searchNumber == null)) {
@@ -28,4 +29,3 @@ if (!isFound) {
   out = "Число: " + searchNumber + " найдено";
 }
 alert(out);
-
