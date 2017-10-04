@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
 	background: url(../images/bg.jpg) no-repeat center top / cover;
     padding-bottom: 205px;
@@ -8,13 +14,6 @@ body {
 	padding: 0;
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
-}
-
-.clearfix::after {
-    content: '';
-    display: table;
-    width: 100%;
-    clear: both;
 }
 
 .logo {
@@ -29,11 +28,11 @@ nav {
 	float: left;
 	display: block;
 	margin-right: 35px;
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 .menu li a {
-	color: #fff;
+    color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: 'Arial';
@@ -41,14 +40,15 @@ nav {
 	font-weight: 400;
 	padding: 0px;
 	letter-spacing: 2.5px;
-
 }
 
 .heading {
 	margin: 0;
 	height: 70px;
 	background-color: black;
-	opacity: 0.7;
+    opacity: 0.7;
+
+    
 }
 
 .titles {
@@ -76,13 +76,16 @@ nav {
 
 
 .history h1 {
+    padding: 34px 0 34px 0;
     font-size: 40px;
     font-family: 'Arial';
     text-align: center;
 }
 
 .t-history {
-    margin-left: 570px;
+    height: 1800px;
+    width: 760px;
+    margin: 0 auto;
 }
 
 
@@ -94,11 +97,37 @@ nav {
     padding-top: 10px;
 }
 
-.historytext {
+.historytext p {
     width: 750px;
     font-size: 20px;
     font-family: 'Arial';
     text-align: left;
     line-height: 1.55;
+    padding-bottom: 25px;
 }
 
+.bgsection {
+    margin-top: 50px;
+	height: 365px;
+    background-color: #f4f3dc;
+}
+
+.bgsection h1 {
+    padding: 40px 0 40px 0;
+    font-size: 40px;
+    font-family: 'Arial';
+    text-align: center;
+}
+
+.bgsection_text {
+    width: 760px;
+    margin: 0 auto;
+}
+
+.bgsection_text p {
+    font-size: 26px;
+    font-family: 'Arial';
+    text-align: left;
+    color: #000000;
+    line-height: 1.35;
+}
