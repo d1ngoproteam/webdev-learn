@@ -1,0 +1,104 @@
+header {
+	background: url(../images/bg.jpg) no-repeat center top / cover;
+    padding-bottom: 205px;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.logo {
+	padding: 14px 0 0 40px;
+}
+
+nav {
+	float: right;
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 35px;
+	margin-top: 10px;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Arial';
+	font-size: 13px;
+	font-weight: 400;
+	padding: 0px;
+	letter-spacing: 2.5px;
+
+}
+
+.heading {
+	margin: 0;
+	height: 70px;
+	background-color: black;
+	opacity: 0.7;
+}
+
+.titles {
+    margin: 0 auto;
+}
+
+.titles_first {
+    font-size: 62px;
+    font-family: 'Arial';
+    color: #fff;
+    text-align: center;
+    margin-top: 198px;
+    font-weight: bold;
+}
+
+.titles_two {
+    font-size: 26px;
+    font-family: 'Arial';
+    color: #fff;
+    width: 650px;
+    text-align: center;
+    margin-top: 38px;
+    margin-left: 630px;
+}
+
+
+.history h1 {
+    font-size: 40px;
+    font-family: 'Arial';
+    text-align: center;
+}
+
+.t-history {
+    margin-left: 570px;
+}
+
+
+.t-history h2 {
+    font-size: 20px;
+    font-family: 'Arial';
+    text-align: left;
+    margin-bottom: 3px;
+    padding-top: 10px;
+}
+
+.historytext {
+    width: 750px;
+    font-size: 20px;
+    font-family: 'Arial';
+    text-align: left;
+    line-height: 1.55;
+}
+
