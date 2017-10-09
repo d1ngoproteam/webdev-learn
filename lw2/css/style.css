@@ -47,7 +47,11 @@ nav {
 .background {
 	height: 661px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	width: 100%;
+=======
+	width: 110%;
+>>>>>>> d1451fa8c39bbb120e86a0169e7fddbbd858fa31
 =======
 	width: 110%;
 >>>>>>> d1451fa8c39bbb120e86a0169e7fddbbd858fa31
@@ -272,6 +276,7 @@ label, a{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dgwork {
 	margin: 0 auto;
 	text-align: center;
@@ -321,10 +326,15 @@ footer {
 	float: right;
 }
 =======
+=======
+>>>>>>> d1451fa8c39bbb120e86a0169e7fddbbd858fa31
 .background_work {
 	height: 300px;
 	width: 100%;
 	margin-top: 0px;
 	background: url(../images/work.jpg) no-repeat center / cover;	
 }
+<<<<<<< HEAD
+>>>>>>> d1451fa8c39bbb120e86a0169e7fddbbd858fa31
+=======
 >>>>>>> d1451fa8c39bbb120e86a0169e7fddbbd858fa31
