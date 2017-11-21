@@ -1,41 +1,32 @@
-function registration(event){
-    var Email = document.getElementById('email');
-    var Pass = document.getElementById('password');
-    var PassCheck = document.getElementById('password_repeat');
-    var Agreement = document.getElementById('check_agreement');  
-    var emailCheck = (/[^\s@]+@[^\s@]+\.[^\s@]+/.test(Email.value));
-  
+$(document).ready(function(){
+    $('#registration').submit(function(event){
     event.preventDefault();
-    if ((Email.value == "") || (Pass.value == "") || (PassCheck.value == "")){
-      alert("Введите данные"); 
+    var Email = $("#email").val();
+    var Pass = $("#password").val();
+    var PassCheck = $("#password_repeat").val();
+    var Agreement = $("#check_agreement").prop("checked");
+    var emailCheck = (/[^\s@]+@[^\s@]+\.[^\s@]+/.test(Email));
+  
+    if ((Email.length < 5) || (!emailCheck)) {
+      alert("Ошибка ввода Email.");
       return;
-      
-    }else{
-
-      if ((Email.value.length < 5) || (!emailCheck)) {
-          alert("Email введен некорректно");
-          return;
-      }
+    }
   
-      if ((Pass.value.length < 6) || (Pass == "") || (PassCheck == "")) {
-          alert("Длина пароля должна быть не менее 6-ти символов");
-          return;
-      }
+    if ((Pass.length < 6) || (Pass == "") || (PassCheck == "")) {
+      alert("Ошибка ввода пароля");
+      return;
+    }
   
-      if (Pass.value != PassCheck.value) {
-          alert("Введеные пароли не совпадают");
-          return;
-      }
+    if (Pass != PassCheck) {
+      alert("Пароли должны совпадать");
+      return;
+    }
   
-      if (!Agreement.checked){
-          alert("Примите условия пользовательского соглашение");
-          return;
-      }
+    if (!Agreement){
+      alert("Вы должны принять пользовательское соглашение");
+      return;
+    }
   
-      alert("Регистрация успешна!");
-      }
-  }
-  
-  window.onload = function(){
-    document.getElementById("registration").addEventListener("submit", registration);
-  };
+    alert("Регистрация успешна");
+    });
+  });
