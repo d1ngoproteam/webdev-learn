@@ -30,7 +30,7 @@ class CoffeMachine {
   }
 
   checkNumberCoffee(number) {
-    if ((number >= 1 ) && (number <= 3)) {
+    if ((number >= 1 ) && (number <= this.coffeeMenu.length)) {
       return true;
     }
     return false;
