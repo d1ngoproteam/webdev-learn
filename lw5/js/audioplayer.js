@@ -52,7 +52,6 @@ jQuery(document).ready(function() {
 
     $('.fwd').click(function (e) {
         e.preventDefault();
-
         stopAudio();
 
         var next = $('.playlist li.active').next();
@@ -112,3 +111,25 @@ jQuery(document).ready(function() {
         stop: function(event,ui) {}
     });
 });
+var id =0;
+window.onload = function() {
+    var items = document.getElementsByTagName('li'), ids = [];
+    for (var i = 0; i < items.length; i++) ids.push(items[i].id);
+	id = sessionStorage.getItem('song');
+    //alert(ids.join('\n'));
+	alert(ids[id]);
+}
+
+function forward(){
+	id++;
+	if (id >= 3)
+		id = 0;
+	sessionStorage.setItem('song', id);
+}
+function post(){
+	id--;
+	if (id < 0)
+		id = 2;
+	sessionStorage.setItem('song', id);
+}
+

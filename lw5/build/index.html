@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Аудиоплеер</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/s.js"></script>
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
     <script type="text/javascript" src="js/audioplayer.js"></script>
@@ -20,16 +21,16 @@
             <div class="controls">
                 <div class="play"></div>
                 <div class="pause"></div>
-                <div class="rew"></div>
-                <div class="fwd"></div>
+                <div class="rew" onclick = 'return post()'></div>
+                <div class="fwd" onclick = 'return forward()' ></div>
             </div>
             <div class="volume"></div>
             <div class="tracker"></div>
         </div>
         <ul class="playlist">
-            <li audiourl="XXXTENTACION – NUMB.mp3" cover="cover1.jpg" artist="XXXTENTACION">NUMB</li>
-            <li audiourl="XXXTENTACION  – SAD!.mp3" cover="cover2.jpg" artist="XXXTENTACION">SAD!</li>
-            <li audiourl="Kendrick Lamar – Big Shot.mp3" cover="cover3.jpg" artist="Kendrick Lamar">Big Shot</li>
+            <li audiourl="XXXTENTACION – NUMB.mp3" cover="cover1.jpg" artist="XXXTENTACION" id = 'song1'>NUMB</li>
+            <li audiourl="XXXTENTACION  – SAD!.mp3" cover="cover2.jpg" artist="XXXTENTACION"  id = 'song2'>SAD! </li>
+            <li audiourl="Kendrick Lamar – Big Shot.mp3" cover="cover3.jpg" artist="Kendrick Lamar"  id = 'song3'>Big Shot</li>
         </ul>
 
     </div>
