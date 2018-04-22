@@ -1,0 +1,21 @@
+.text {
+  word-wrap: break-word;
+  overflow: hidden;
+  max-width: 90%;
+  padding-right: 10px;
+}
+
+.product {
+  text-decoration: none;
+  color: black;
+}
+
+.product:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.product:visited  {
+  text-decoration: none;
+  color: black;
+}

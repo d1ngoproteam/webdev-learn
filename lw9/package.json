@@ -1,0 +1,31 @@
+{
+  "name": "lw9",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start-server": "nodemon ./server/server.js"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "reactstrap": "^5.0.0-beta.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.0",
+    "mongoose-id-validator": "^0.4.3",
+    "morgan": "^1.9.0",
+    "nconf": "^0.8.5",
+    "node-static": "^0.7.10",
+    "nodemon": "^1.12.1"
+  }
+}

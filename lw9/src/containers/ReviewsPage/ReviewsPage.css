@@ -1,0 +1,25 @@
+.review {
+  text-decoration: none;
+  color: black;
+}
+
+.review:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.review:visited  {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.text {
+  word-wrap: break-word;
+  overflow: hidden;
+  max-width: 90%;
+  padding-right: 10px;
+}
