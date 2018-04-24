@@ -33,83 +33,11 @@ router.get(ROUTE_PRODUCTS_ID, (req, res, next) => {
   });
 });
 
-router.post(ROUTE_PRODUCTS, (req, res, next) => {
-  Product.create(req.body).then((product) => {
-    res.send(product);
-  }).catch((next) => {
-    res.send(ERROR500);
-  });
-});
-
-router.put(ROUTE_PRODUCTS_ID, (req, res, next) => {
-  Product.findByIdAndUpdate({ _id: req.params.id }, req.body)
-  .then(() => {
-    Product.findOne({ _id: req.params.id }).then((product) => {
-      res.send(product);
-    }).catch((next) => {
-      res.send(ERROR404);
-    });
-  }).catch((next) => {
-    res.send(ERROR500);
-  });
-});
-
-router.delete(ROUTE_PRODUCTS_ID, (req, res, next) => {
-  Product.findByIdAndRemove({ _id: req.params.id })
-  .then((product) => {
-    res.send(product);
-  }).catch((next) => {
-    res.send(ERROR404);
-  });
-});
-
 router.get(ROUTE_REVIEWS, (req, res, next) => {
   Review.find({}).then((reviews) => {
     res.send(reviews);
   }).catch((next) => {
     res.send(ERROR500);
-  });
-});
-
-router.get(ROUTE_REVIEWS_ID, (req, res, next) => {
-  Review.findOne({ _id: req.params.id }).then((review) => {
-    res.send(review);
-  }).catch((next) => {
-    res.send(ERROR404);
-  });
-});
-
-router.post(ROUTE_REVIEWS, (req, res, next) => {
-  Product.findOne({ _id: req.body.productId }).then((product) => {
-    Review.create(req.body).then((review) => {
-      res.send(review);
-    }).catch((next) => {
-      res.send(ERROR500);
-    });
-  }).catch((next) => {
-    res.send(ERROR404);
-  })
-})
-
-router.put(ROUTE_REVIEWS_ID, (req, res, next) => {
-  Review.findByIdAndUpdate({ _id: req.params.id }, req.body)
-  .then(() => {
-    Review.findOne({_id: req.params.id}).then((review) => {
-      res.send(review);
-    }).catch((next) => {
-      res.send(ERROR404);
-    });
-  }).catch((next) => {
-    res.send(ERROR500);
-  });
-});
-
-router.delete(ROUTE_REVIEWS, (req, res, next) => {
-  Review.findByIdAndRemove({ _id: req.params.id })
-  .then((review) => {
-    res.send(review);
-  }).catch((next) => {
-    res.send(ERROR404);
   });
 });
 
