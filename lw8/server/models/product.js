@@ -8,6 +8,13 @@ const ProductSchema = new Schema({
     validate: /\S+/,
     unique: [true],
     required: [true]
+  },
+  images: {
+    type:[{
+      type: String,
+      validate: /\S+/
+    }],
+    required: [true]
   }
 });
 
